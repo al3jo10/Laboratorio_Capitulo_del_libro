@@ -1,0 +1,48 @@
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama_service
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    environment:
+      - OLLAMA_KEEP_ALIVE=-1
+    healthcheck:
+      test: ["CMD-SHELL", "ollama list || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    restart: unless-stopped
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+  orquestador:
+    build: ./orquestador
+    container_name: orquestador_api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./orquestador:/app
+      - ./voices:/voices:ro
+      - hf_cache:/root/.cache/huggingface
+      - ./mediciones:/mediciones
+    environment:
+      - OLLAMA_URL=http://ollama:11434
+      - WHISPER_MODEL=base
+      - WHISPER_DEVICE=cpu
+      - WHISPER_COMPUTE=int8
+      - PIPER_VOICE=/voices/es_ES-davefx-medium.onnx
+    depends_on:
+      ollama:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  ollama_data:
+  hf_cache:

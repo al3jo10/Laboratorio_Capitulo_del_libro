@@ -1,0 +1,15 @@
+HTTP/1.1 200 OK
+date: Wed, 02 Sep 2026 02:45:23 GMT
+server: uvicorn
+x-transcripcion: No sé qué agua que estoy aburrido.
+x-respuesta: Parece que estás buscando algo para levantar el ánimo, ¿quieres hablar de algo en particular o necesitas alguna sugerencia?
+x-ms-total: 2547.12
+x-ms-stt: 392.19
+x-ms-llm: 1124.61
+x-ms-tts: 1029.84
+content-type: audio/wav
+accept-ranges: bytes
+content-length: 265772
+last-modified: Wed, 02 Sep 2026 02:45:27 GMT
+etag: "7bec0ad8900696fad4249df3e25024cd"
+

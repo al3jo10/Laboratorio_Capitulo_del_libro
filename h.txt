@@ -1,0 +1,16 @@
+HTTP/1.1 200 OK
+date: Wed, 02 Sep 2026 03:17:15 GMT
+server: uvicorn
+x-id: 73e177fb
+x-transcripcion: Hola quién eres.
+x-respuesta: Soy el guía de este entorno de realidad virtual, mi función es ayudarte a navegar y entender el mundo en el que te encuentras. ¿Qué deseas hacer primero en este lugar?
+x-ms-total: 2689.02
+x-ms-stt: 346.46
+x-ms-llm: 1254.62
+x-ms-tts: 1087.53
+content-type: audio/wav
+accept-ranges: bytes
+content-length: 383532
+last-modified: Wed, 02 Sep 2026 03:17:18 GMT
+etag: "aec1fad858c722a92c1d3c1655313312"
+

@@ -1,0 +1,15 @@
+HTTP/1.1 200 OK
+date: Wed, 02 Sep 2026 02:38:59 GMT
+server: uvicorn
+x-transcripcion: Hola, quién eres si que haces en este lugar.
+x-respuesta: Soy el director de este mundo virtual, aquí he diseñado un entorno que simula una ciudad futurista y estoy trabajando en algunos de los sistemas que lo hacen funcionar.
+x-ms-total: 41998.47
+x-ms-stt: 388.6
+x-ms-llm: 40273.66
+x-ms-tts: 1335.74
+content-type: audio/wav
+accept-ranges: bytes
+content-length: 420396
+last-modified: Wed, 02 Sep 2026 02:39:42 GMT
+etag: "820d267b674dbfebb033e246e43f7d65"
+

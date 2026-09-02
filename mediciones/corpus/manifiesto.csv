@@ -1,0 +1,11 @@
+id_enunciado,banda,n_palabras,n_caracteres,dur_audio_s,texto
+E01,corta,3,16,1.091,"Hola, quien eres"
+E02,corta,5,21,1.01,Que hay en este lugar
+E03,corta,2,15,0.987,Puedes ayudarme
+E04,media,11,64,3.587,"Estoy buscando la salida de este edificio, sabes por donde queda"
+E05,media,13,66,3.262,Me puedes explicar para que sirve la maquina que esta detras de ti
+E06,media,12,70,3.355,Cuanto tiempo llevas trabajando aqui y que es lo que haces exactamente
+E07,media,12,74,3.947,"No entiendo muy bien las instrucciones, me las puedes repetir mas despacio"
+E08,larga,26,149,8.197,Antes de continuar necesito que me expliques cuales son los riesgos de esta zona y que equipo de proteccion debo usar para poder entrar sin problemas
+E09,larga,28,160,8.278,Me gustaria saber si existe alguna forma de llegar hasta la parte superior de la estructura sin tener que pasar por el sector que esta cerrado por mantenimiento
+E10,larga,30,169,9.729,"Estuve revisando los planos que me entregaste al comienzo y creo que hay una diferencia con lo que veo aqui, podrias confirmarme cual de las dos versiones es la correcta"
